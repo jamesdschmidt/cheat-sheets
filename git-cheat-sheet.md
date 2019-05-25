@@ -2,22 +2,24 @@
 
 ## Configuration (https://git-scm.com/docs/git-config)
 
-Sets the name you want attached to your commit transactions
+Add ```--global``` flag to ```config``` command to set global configuration (```~/.gitconfig```) or omit it to set local configuration (```[project]/.git/config```). This is helpful if you are using multiple git host services and/or email addresses.
+
+Set the name you want attached to your commit transactions.
 ```
 $ git config --global user.name "John Doe"
 ```
 
-Sets the email you want attached to your commit transactions
+Set the email you want attached to your commit transactions.
 ```
 $ git config --global user.email johndoe@example.com
 ```
 
-Sets the default text editor. If not configured, Git uses your system’s default editor.
+Set the default text editor. If not configured, Git uses your system’s default editor.
 ```
 $ git config --global core.editor vi
 ```
 
-Sets colorization of command line output.
+Set colorization of command line output.
 ```
 $ git config --global color.ui auto
 ```

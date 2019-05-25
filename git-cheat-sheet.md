@@ -63,12 +63,12 @@ Create a new branch.
 $ git branch [branch-name]
 ```
 
-Switch to the specified branch.
+Switch to the specified branch. (https://git-scm.com/docs/git-checkout)
 ```
 $ git checkout [branch-name]
 ```
 
-Merge the specified branch in to the current branch.
+Merge the specified branch in to the current branch. (https://git-scm.com/docs/git-merge)
 ```
 $ git merge [branch-name]
 ```
@@ -90,7 +90,7 @@ Show commit logs. (https://git-scm.com/docs/git-log)
 $ git log
 ```
 
-Show changes between commit, commit and working tree, etc.
+Show changes between commit, commit and working tree, etc. (https://git-scm.com/docs/git-diff)
 ```
 $ git diff
 ```

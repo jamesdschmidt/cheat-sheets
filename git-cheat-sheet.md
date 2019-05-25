@@ -39,7 +39,7 @@ Get a specific key’s value.
 $ git config user.name
 ```
 
-## Create Repositories
+## Repositories
 
 Create a new local repository. (https://git-scm.com/docs/git-init)
 ```

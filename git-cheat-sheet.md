@@ -78,6 +78,23 @@ Delete the specified branch.
 $ git branch -D [branch-name]
 ```
 
+## History
+
+Show the working tree status. (https://git-scm.com/docs/git-status)
+```
+$ git status
+```
+
+Show commit logs. (https://git-scm.com/docs/git-log)
+```
+$ git log
+```
+
+Show changes between commit, commit and working tree, etc.
+```
+$ git diff
+```
+
 ## References
 
 * [Pro Git](https://git-scm.com/book/en/v2)

@@ -1,5 +1,10 @@
 # Git Cheat Sheet
 
+Get available Git commands.
+```
+$ git help
+```
+
 ## Configuration (https://git-scm.com/docs/git-config)
 
 Add ```--global``` flag to ```config``` command to set global configuration (```~/.gitconfig```) or omit it to set local configuration (```[project]/.git/config```). This is helpful if you are using multiple git host services and/or email addresses.

@@ -10,7 +10,7 @@ Check if Redis is working
 /opt/redis-5.0.5/src$ ./redis-cli ping
 PONG
 ```
-
+and
 ```
 /opt/redis-5.0.5/src$ ./redis-cli
 127.0.0.1:6379>ping

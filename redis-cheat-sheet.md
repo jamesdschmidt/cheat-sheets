@@ -20,3 +20,6 @@ OK
 127.0.0.1:6379>get mykey
 "somevalue"
 ```
+
+## References
+* [Redis Quick Start](https://redis.io/topics/quickstart)

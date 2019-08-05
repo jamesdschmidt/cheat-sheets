@@ -4,10 +4,15 @@
 
 ## List Databases
 ```
-<db_name>=#\l
+\l
 ```
 
 ## List Tables
 ```
-<db_name>=#\dt
+\dt
+```
+
+## Quit
+```
+\quit
 ```

@@ -1,18 +1,26 @@
 # Postgres Cheat Sheet
 
 ## Connect
+```
+$ psql "postgresql://DBUSER:@localhost:5432/DBNAME"
+```
+
+## Get Version
+```
+DBNAME=# select version();
+```
 
 ## List Databases
 ```
-\l
+DBNAME=# \l
 ```
 
 ## List Tables
 ```
-\dt
+DBNAME=# \dt
 ```
 
 ## Quit
 ```
-\quit
+DBNAME=# \quit
 ```

@@ -1,6 +1,6 @@
 # virtualenv Cheat Sheet
 
-This cheat sheet is for those who like to eat spam. (https://virtualenv.pypa.io/en/latest/userguide/#usage)
+This cheat sheet is for those who like spam (https://www.youtube.com/watch?v=zLih-WQwBSc).
 
 ## Create Environment
 ```
@@ -27,3 +27,5 @@ $ lsvirutualenv
 (my-new-environment)$ deactivate
 $ rm -r /path/to/my-new-environment
 ```
+
+For more see https://virtualenv.pypa.io/en/latest/userguide/#usage

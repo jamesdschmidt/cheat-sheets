@@ -1,5 +1,7 @@
 # virtualenv Cheat Sheet
 
+This cheat sheet is for those who like to eat spam.
+
 ## Create Environment
 ```
 $ virtualenv mynewenvironment

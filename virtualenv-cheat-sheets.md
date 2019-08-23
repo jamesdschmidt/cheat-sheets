@@ -9,7 +9,7 @@ $ virtualenv --python python2 my-new-environment
 
 ## Activate Environment
 ```
-$ activate my-new-environment/bin/activate
+$ source my-new-environment/bin/activate
 ```
 
 ## Deactivate Environment

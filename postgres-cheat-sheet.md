@@ -1,4 +1,4 @@
-# Postgres Cheat Sheet
+# Postgres (psql) Cheat Sheet
 
 ## Connect
 ```

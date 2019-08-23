@@ -61,6 +61,16 @@ Stops containers and removes containers, networks, volumes, and images created b
 $ docker-compose down
 ```
 
+Starts existing containers for a service. (https://docs.docker.com/compose/reference/start/)
+```
+$ docker-compose start
+```
+
+Stops running containers without removing them. (https://docs.docker.com/compose/reference/stop/)
+```
+$ docker-compose stop
+```
+
 ## References
 
 * [Docker Cheat Sheet](https://www.docker.com/sites/default/files/Docker_CheatSheet_08.09.2016_0.pdf)

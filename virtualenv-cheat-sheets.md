@@ -1,6 +1,6 @@
 # virtualenv Cheat Sheet
 
-This cheat sheet is for those who like spam (https://www.youtube.com/watch?v=zLih-WQwBSc).
+This cheat sheet is for those who like spam...er...a...comedy about spam (https://www.youtube.com/watch?v=zLih-WQwBSc).
 
 ## Create Environment
 ```

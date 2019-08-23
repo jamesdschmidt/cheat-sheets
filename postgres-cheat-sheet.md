@@ -20,6 +20,11 @@ DBNAME=# \l
 DBNAME=# \dt
 ```
 
+## Describe a Table
+```
+DBNAME=# \d+ TABLENAME
+```
+
 ## Quit
 ```
 DBNAME=# \quit

@@ -4,7 +4,7 @@ This cheat sheet is for those who like spam...er...a...comedy about spam (https:
 
 ## Create Environment
 ```
-$ virtualenv --python python2 my-new-environment
+$ mkvirtualenv my-new-environment
 ```
 
 ## Activate Environment
@@ -24,8 +24,7 @@ $ lsvirutualenv
 
 ## Remove an Environment
 ```
-(my-new-environment)$ deactivate
-$ rm -r /path/to/my-new-environment
+$ rm -r ~/.virtualenvs/my-new-environment
 ```
 
 For more see https://virtualenv.pypa.io/en/latest/userguide/#usage

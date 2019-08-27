@@ -71,6 +71,11 @@ Stops running containers without removing them. (https://docs.docker.com/compose
 $ docker-compose stop
 ```
 
+Displays log output from services. (https://docs.docker.com/compose/reference/logs/)
+```
+$ docker-compose logs my_container
+```
+
 ## References
 
 * [Docker Cheat Sheet](https://www.docker.com/sites/default/files/Docker_CheatSheet_08.09.2016_0.pdf)

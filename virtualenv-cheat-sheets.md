@@ -9,7 +9,7 @@ $ mkvirtualenv my-new-environment
 
 ## Activate Environment
 ```
-$ source my-new-environment/bin/activate
+$ source ~/.virtualenvs/my-new-environment/bin/activate
 ```
 
 ## Deactivate Environment

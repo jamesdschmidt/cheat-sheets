@@ -24,7 +24,7 @@ $ docker system prune
 
 Remove all images
 ```
-$ docker rmi -f $(docker images -a -q)
+$ docker system prune --all
 ```
 
 ## Containers

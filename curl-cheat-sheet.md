@@ -1,1 +1,1 @@
-Edit https://catonmat.net/cookbooks/curl
+See https://catonmat.net/cookbooks/curl

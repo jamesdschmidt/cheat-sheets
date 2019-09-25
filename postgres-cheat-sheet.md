@@ -2,17 +2,22 @@
 
 ## Connect
 ```
-$ psql "postgresql://DBUSER:@localhost:5432/DBNAME"
+$ psql "postgresql://DBUSER:@localhost:5432"
 ```
 
 ## Get Version
 ```
-DBNAME=# select version();
+postgres=# select version();
 ```
 
 ## List Databases
 ```
-DBNAME=# \l
+postgres=# \l
+```
+
+## Connect to Database
+```
+postgres=# \c DBNAME
 ```
 
 ## List Tables

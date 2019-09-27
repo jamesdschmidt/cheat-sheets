@@ -34,3 +34,8 @@ DBNAME=# \d+ TABLENAME
 ```
 DBNAME=# \quit
 ```
+
+### Drop a Database
+```
+postgres=# DROP DATABASE DBNAME;
+```

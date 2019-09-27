@@ -5,37 +5,13 @@
 $ psql "postgresql://DBUSER:@localhost:5432"
 ```
 
-## Get Version
-```
-postgres=# select version();
-```
-
-## List Databases
-```
-postgres=# \l
-```
-
-## Connect to Database
-```
-postgres=# \c DBNAME
-```
-
-## List Tables
-```
-DBNAME=# \dt
-```
-
-## Describe a Table
-```
-DBNAME=# \d+ TABLENAME
-```
-
-## Quit
-```
-DBNAME=# \q
-```
-
-### Drop a Database
-```
-postgres=# DROP DATABASE DBNAME;
-```
+Command | Description
+------------ | -------------
+\q | quit psql
+\\? | show help
+SELECT VERSION(); | show postgres version
+\l | list databases
+\c name | connect to new database
+\dt | list tables
+\d+ name | describe table
+DROP DATABASE name; | remove a database

@@ -32,7 +32,7 @@ DBNAME=# \d+ TABLENAME
 
 ## Quit
 ```
-DBNAME=# \quit
+DBNAME=# \q
 ```
 
 ### Drop a Database

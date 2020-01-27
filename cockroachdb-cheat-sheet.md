@@ -9,8 +9,8 @@ cockroach sql --insecure
 ## Show Databases on the Cluster
 SHOW databases;
 
-## Show Tables in a Database
+## Show Tables from a Different Database
 SHOW TABLES FROM movr;
 
-## Query Table
+## Querying a Table from a Different Database
 SELECT * FROM movr.users LIMIT 10;

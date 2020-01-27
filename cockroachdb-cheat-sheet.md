@@ -20,3 +20,9 @@ CREATE DATABASE crdb_uni;
 
 ## Set the Current Database
 SET database = crdb_uni;
+
+## Create a Table
+CREATE TABLE students (id UUID PRIMARY KEY DEFAULT gen_random_uuid(), name STRING);
+
+## Show Table Schema
+SHOW CREATE students;

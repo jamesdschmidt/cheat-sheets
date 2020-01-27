@@ -29,4 +29,9 @@ CREATE TABLE courses (sys_id UUID DEFAULT gen_random_uuid(), course_id INT, name
 
 ## Show Table Schema
 SHOW CREATE students;
-SHOW CREATE courses;
+
+## Add a Column to a Table
+ALTER TABLE courses ADD COLUMN schedule STRING;
+
+## Drop a Table
+DROP TABLE students;

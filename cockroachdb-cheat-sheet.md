@@ -24,5 +24,9 @@ SET database = crdb_uni;
 ## Create a Table
 CREATE TABLE students (id UUID PRIMARY KEY DEFAULT gen_random_uuid(), name STRING);
 
+## Create a Table With a Composite Primary Key
+CREATE TABLE courses (sys_id UUID DEFAULT gen_random_uuid(), course_id INT, name STRING, PRIMARY KEY (sys_id, course_id));
+
 ## Show Table Schema
 SHOW CREATE students;
+SHOW CREATE courses;

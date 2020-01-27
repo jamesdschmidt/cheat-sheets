@@ -14,3 +14,9 @@ SHOW TABLES FROM movr;
 
 ## Querying a Table from a Different Database
 SELECT * FROM movr.users LIMIT 10;
+
+## Create Database
+CREATE DATABASE crdb_uni;
+
+## Set the Current Database
+SET database = crdb_uni;

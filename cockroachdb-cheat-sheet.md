@@ -107,3 +107,6 @@ cockroach workload init movr
 cockroach sql --insecure --host=localhost:26257 --execute="SELECT * FROM movr.users LIMIT 10;"
 cockroach sql --insecure --host=localhost:26257 --execute="SHOW RANGES FROM TABLE movr.users;"
 ```
+
+### Show Ranges Where Replicas Are Located
+```SHOW RANGES FROM TABLE movr.users;```

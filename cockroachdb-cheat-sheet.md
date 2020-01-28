@@ -153,3 +153,6 @@ CONFIGURE ZONE USING constraints='[+region=us-west]';
 ALTER PARTITION los_angeles OF TABLE movr.vehicles
 CONFIGURE ZONE USING constraints='[+region=us-west]';
 ```
+
+## Backup
+[Back up and Restore Data](https://www.cockroachlabs.com/docs/stable/backup-and-restore.html)

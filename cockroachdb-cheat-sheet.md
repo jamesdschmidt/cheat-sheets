@@ -1,7 +1,37 @@
 # CockroachDB Cheat Sheet
 
-## Start a Single Node Cluster
+## Starting a Local Cluster
+
+### Start a Single Node Cluster
 ```cockroach start-single-node --insecure --listen-addr=localhost:26257 --http-addr=localhost:8080```
+
+### Staring a Three-Node Cluster
+```
+cockroach start --insecure --listen-addr=localhost:26257 --join=localhost:26257,localhost:26258,localhost:26259 \
+  --http-addr=localhost:8080 --store=cockroach-data-1 --background
+cockroach start --insecure --listen-addr=localhost:26257 --join=localhost:26257,localhost:26258,localhost:26259 \
+  --http-addr=localhost:8081 --store=cockroach-data-2 --background  # this will error out
+cockroach start --insecure --listen-addr=localhost:26258 --join=localhost:26257,localhost:26258,localhost:26259 \
+  --http-addr=localhost:8081 --store=cockroach-data-2 --background
+cockroach start --insecure --listen-addr=localhost:26259 --join=localhost:26257,localhost:26258,localhost:26259 \
+--http-addr=localhost:8082 --store=cockroach-data-3 --background
+```
+
+### Initialize the Cluster
+```cockroach init --host localhost:26258 --insecure```
+
+### Add Two More Nodes to the Cluster
+```
+cockroach start --insecure --listen-addr=localhost:26260 \
+  --join=localhost:26257,localhost:26258,localhost:26259,localhost:26260,localhost:26261 \
+  --http-addr=localhost:8083 --store=cockroach-data-4 --background
+cockroach start --insecure --listen-addr=localhost:26261 \
+  --join=localhost:26257,localhost:26258,localhost:26259,localhost:26260,localhost:26261 \
+  --http-addr=localhost:8084 --store=cockroach-data-5 --background
+```
+
+### Stop a Node
+```cockroach quit --insecure --host=localhost:26261```
 
 ### View the Admin UI
 ```open http://localhost:8080```
@@ -42,32 +72,6 @@
 
 ### Drop a Table
 ```DROP TABLE students;```
-
-## Starting a Local Cluster
-
-### Staring a Three-Node Cluster
-```
-cockroach start --insecure --listen-addr=localhost:26257 --join=localhost:26257,localhost:26258,localhost:26259 \
-  --http-addr=localhost:8080 --store=cockroach-data-1 --background
-cockroach start --insecure --listen-addr=localhost:26257 --join=localhost:26257,localhost:26258,localhost:26259 \
-  --http-addr=localhost:8081 --store=cockroach-data-2 --background  # this will error out
-cockroach start --insecure --listen-addr=localhost:26258 --join=localhost:26257,localhost:26258,localhost:26259 \
-  --http-addr=localhost:8081 --store=cockroach-data-2 --background
-cockroach start --insecure --listen-addr=localhost:26259 --join=localhost:26257,localhost:26258,localhost:26259 \
---http-addr=localhost:8082 --store=cockroach-data-3 --background
-```
-### Initialize the Cluster
-```cockroach init --host localhost:26258 --insecure```
-
-### Add Two More Nodes to the Cluster
-```
-cockroach start --insecure --listen-addr=localhost:26260 \
-  --join=localhost:26257,localhost:26258,localhost:26259,localhost:26260,localhost:26261 \
-  --http-addr=localhost:8083 --store=cockroach-data-4 --background
-cockroach start --insecure --listen-addr=localhost:26261 \
-  --join=localhost:26257,localhost:26258,localhost:26259,localhost:26260,localhost:26261 \
-  --http-addr=localhost:8084 --store=cockroach-data-5 --background
-```
 
 ## Secondary Indexes
 

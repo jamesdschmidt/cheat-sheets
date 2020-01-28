@@ -110,3 +110,40 @@ cockroach sql --insecure --host=localhost:26257 --execute="SHOW RANGES FROM TABL
 
 ### Show Ranges Where Replicas Are Located
 ```SHOW RANGES FROM TABLE movr.users;```
+
+## Geo-partitioning
+NOTE: This feature requires enterprise license.
+
+### Partition Table
+```
+ALTER TABLE movr.vehicles
+PARTITION BY LIST (city) (
+    PARTITION new_york VALUES IN ('new york'),
+    PARTITION boston VALUES IN ('boston'),
+    PARTITION washington_dc VALUES IN ('washington dc'),
+    PARTITION seattle VALUES IN ('seattle'),
+    PARTITION san_francisco VALUES IN ('san francisco'),
+    PARTITION los_angeles VALUES IN ('los angeles')
+);
+```
+
+### Pin Partition To Region
+```
+ALTER PARTITION new_york OF TABLE movr.vehicles
+CONFIGURE ZONE USING constraints='[+region=us-east]';
+
+ALTER PARTITION boston OF TABLE movr.vehicles
+CONFIGURE ZONE USING constraints='[+region=us-east]';
+
+ALTER PARTITION washington_dc OF TABLE movr.vehicles
+CONFIGURE ZONE USING constraints='[+region=us-central]';
+
+ALTER PARTITION seattle OF TABLE movr.vehicles
+CONFIGURE ZONE USING constraints='[+region=us-west]';
+
+ALTER PARTITION san_francisco OF TABLE movr.vehicles
+CONFIGURE ZONE USING constraints='[+region=us-west]';
+
+ALTER PARTITION los_angeles OF TABLE movr.vehicles
+CONFIGURE ZONE USING constraints='[+region=us-west]';
+```

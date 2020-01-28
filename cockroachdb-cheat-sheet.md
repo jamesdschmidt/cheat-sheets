@@ -154,5 +154,6 @@ ALTER PARTITION los_angeles OF TABLE movr.vehicles
 CONFIGURE ZONE USING constraints='[+region=us-west]';
 ```
 
-## Backup
-[Back up and Restore Data](https://www.cockroachlabs.com/docs/stable/backup-and-restore.html)
+## Links
+[Back up and Restore Data](https://www.cockroachlabs.com/docs/stable/backup-and-restore.html)  
+[Production Checklist](https://www.cockroachlabs.com/docs/stable/recommended-production-settings.html)

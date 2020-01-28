@@ -9,19 +9,21 @@
 ### Connect with the SQL Shell
 ```cockroach sql --insecure --host localhost:26257```
 
-## Show Databases on the Cluster
+## Viewing and Creating Databases
+
+### Show Databases on the Cluster
 ```SHOW databases;```
 
-## Show Tables from a Different Database
+### Show Tables from a Different Database
 ```SHOW TABLES FROM movr;```
 
-## Querying a Table from a Different Database
+### Querying a Table from a Different Database
 ```SELECT * FROM movr.users LIMIT 10;```
 
-## Create Database
+### Create Database
 ```CREATE DATABASE crdb_uni;```
 
-## Set the Current Database
+### Set the Current Database
 ```SET database = crdb_uni;```
 
 ## Creating and Modifying a Table

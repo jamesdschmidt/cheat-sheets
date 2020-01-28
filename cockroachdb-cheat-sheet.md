@@ -21,19 +21,21 @@
 ## Set the Current Database
 ```SET database = crdb_uni;```
 
-## Create a Table
+## Creating and Modifying a Table
+
+### Create a Table
 ```CREATE TABLE students (id UUID PRIMARY KEY DEFAULT gen_random_uuid(), name STRING);```
 
-## Create a Table With a Composite Primary Key
+### Create a Table With a Composite Primary Key
 ```CREATE TABLE courses (sys_id UUID DEFAULT gen_random_uuid(), course_id INT, name STRING, PRIMARY KEY (sys_id, course_id));```
 
-## Show Table Schema
+### Show Table Schema
 ```SHOW CREATE students;```
 
-## Add a Column to a Table
+### Add a Column to a Table
 ```ALTER TABLE courses ADD COLUMN schedule STRING;```
 
-## Drop a Table
+### Drop a Table
 ```DROP TABLE students;```
 
 ## Starting a Local Cluster

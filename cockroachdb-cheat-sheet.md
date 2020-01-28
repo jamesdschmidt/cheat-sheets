@@ -77,3 +77,14 @@ cockroach start --insecure --listen-addr=localhost:26261 \
 
 ### Create an Index
 ```CREATE INDEX my_index ON users (last_name, first_name);```
+
+## Transactions
+
+### Start a Transaction
+```BEGIN;```
+
+### Commit a Transaction
+```COMMIT;```
+
+### Rollback a Transaction
+```ROLLBACK;```

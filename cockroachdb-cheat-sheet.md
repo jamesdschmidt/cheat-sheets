@@ -64,3 +64,14 @@ cockroach start --insecure --listen-addr=localhost:26261 \
   --join=localhost:26257,localhost:26258,localhost:26259,localhost:26260,localhost:26261 \
   --http-addr=localhost:8084 --store=cockroach-data-5 --background
 ```
+
+## Secondary Indexes
+
+### Show Indexes on a Table
+```SHOW INDEXES FROM users;```
+
+### Show the Explain Plan
+```EXPLAIN SELECT * FROM users WHERE id = 1;```
+
+### Create an Index
+```CREATE INDEX my_index ON users (last_name, first_name);```

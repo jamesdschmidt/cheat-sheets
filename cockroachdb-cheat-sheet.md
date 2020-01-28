@@ -3,7 +3,10 @@
 ## Start a Single Node Cluster
 ```cockroach start-single-node --insecure --listen-addr=localhost:26257 --http-addr=localhost:8080```
 
-## Connect with the SQL Shell
+### View the Admin UI
+```open http://localhost:8080```
+
+### Connect with the SQL Shell
 ```cockroach sql --insecure --host localhost:26257```
 
 ## Show Databases on the Cluster
@@ -53,9 +56,6 @@ cockroach start --insecure --listen-addr=localhost:26259 --join=localhost:26257,
 ```
 ### Initialize the Cluster
 ```cockroach init --host localhost:26258 --insecure```
-
-### View the Admin UI
-```open http://localhost:8080```
 
 ### Add Two More Nodes to the Cluster
 ```

@@ -30,7 +30,9 @@ $ docker system prune --all
 ## Networks
 
 Create a network (https://docs.docker.com/engine/reference/commandline/network_create/)
-```$ docker create network mynetwork```
+```
+$ docker network create mynetwork
+```
 
 ## Containers
 

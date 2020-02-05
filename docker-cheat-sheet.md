@@ -27,6 +27,11 @@ Remove all images
 $ docker system prune --all
 ```
 
+## Networks
+
+Create a network (https://docs.docker.com/engine/reference/commandline/network_create/)
+```$ docker create network mynetwork```
+
 ## Containers
 
 List containers (https://docs.docker.com/engine/reference/commandline/ps/)

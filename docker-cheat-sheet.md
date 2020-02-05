@@ -34,6 +34,21 @@ Create a network (https://docs.docker.com/engine/reference/commandline/network_c
 $ docker network create mynetwork
 ```
 
+List networks (https://docs.docker.com/engine/reference/commandline/network_ls/)
+```
+$ docker network ls
+```
+
+Remove all unused networks (https://docs.docker.com/engine/reference/commandline/network_prune/)
+```
+$ docker network prune
+```
+
+Remove one or more networks (https://docs.docker.com/engine/reference/commandline/network_rm/)
+```
+$ docker network rm mynetwork
+```
+
 ## Containers
 
 List containers (https://docs.docker.com/engine/reference/commandline/ps/)

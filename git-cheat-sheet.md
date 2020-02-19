@@ -95,6 +95,11 @@ Show changes between commit, commit and working tree, etc. (https://git-scm.com/
 $ git diff
 ```
 
+Show various types of objects (https://git-scm.com/docs/git-show)
+```
+$ git show
+```
+
 ## References
 
 * [Pro Git](https://git-scm.com/book/en/v2)

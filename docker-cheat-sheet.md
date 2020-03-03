@@ -27,6 +27,11 @@ Remove all images
 $ docker system prune --all
 ```
 
+Remove everything
+```
+$ docker rmi $(docker images -a -q)
+```
+
 ## Networks
 
 Create a network (https://docs.docker.com/engine/reference/commandline/network_create/)

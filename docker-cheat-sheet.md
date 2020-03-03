@@ -27,11 +27,6 @@ Remove all images
 $ docker system prune --all
 ```
 
-Remove everything
-```
-$ docker rmi $(docker images -a -q)
-```
-
 ## Networks
 
 Create a network (https://docs.docker.com/engine/reference/commandline/network_create/)
@@ -74,6 +69,11 @@ $ docker stop my_container
 Fetch the logs of a container (https://docs.docker.com/engine/reference/commandline/logs/)
 ```
 $ docker logs my_container
+```
+
+Stop all containers
+```
+$ docker stop $(docker ps -a -q)
 ```
 
 ## Compose

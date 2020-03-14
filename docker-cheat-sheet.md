@@ -61,6 +61,11 @@ Run a command in a new container (https://docs.docker.com/engine/reference/comma
 $ docker run -d -p 8080:8080 my_image
 ```
 
+Run a bash shell in a container (https://docs.docker.com/engine/reference/commandline/exec/)
+```
+$ docker exec -it <container_name> /bin/bash
+```
+
 Stop one or more running containers (https://docs.docker.com/engine/reference/commandline/stop/)
 ```
 $ docker stop my_container

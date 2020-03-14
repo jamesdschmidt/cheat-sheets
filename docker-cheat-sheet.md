@@ -66,7 +66,7 @@ Run a bash shell in a container (https://docs.docker.com/engine/reference/comman
 $ docker exec -it <container_name> /bin/bash
 ```
 
-To exist bash shell in a container
+To exit bash shell in a container
 ```
 $ exit
 ```

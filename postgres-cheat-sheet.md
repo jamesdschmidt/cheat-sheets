@@ -1,6 +1,7 @@
 # Postgres (psql) Cheat Sheet
 
 ## Connect
+In default installations DBUSER is postgres.
 ```
 $ psql "postgresql://DBUSER:@localhost:5432"
 ```

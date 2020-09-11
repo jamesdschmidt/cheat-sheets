@@ -34,6 +34,13 @@ List contexts
 % kubectl config get-contexts
 ```
 
+## Nodes
+
+List nodes
+```
+% kubectl get nodes
+```
+
 ## Pods
 
 List pods

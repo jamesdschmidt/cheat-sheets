@@ -12,6 +12,11 @@ List clusters
 % kind get clusters
 ```
 
+List details of cluster
+```
+% kubectl get all -A
+```
+
 Get cluster information
 ```
 % kubectl cluster-info

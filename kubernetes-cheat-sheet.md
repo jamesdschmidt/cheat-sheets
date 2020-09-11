@@ -67,3 +67,8 @@ Delete a pod
 ```
 % kubectl delete pod <pod-name>
 ```
+
+Delete a pod (alternate)
+```
+% kubectl delete -f pod.yaml
+```

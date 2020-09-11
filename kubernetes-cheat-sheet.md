@@ -2,17 +2,22 @@
 
 ## Clusters
 
+Create a cluster (default kind cluster)
+```
+kind create cluster
+```
+
 List clusters
 ```
 kind get clusters
 ```
 
-Delete cluster (default kind cluster)
+Delete a cluster (default kind cluster)
 ```
 kind delete cluster
 ```
 
-Delete named cluster
+Delete a named cluster
 ```
 kind delete cluster --name <cluster-name>
 ```
@@ -24,7 +29,7 @@ List pods
 kubectl get pods
 ```
 
-Delete pod
+Delete a pod
 ```
 kubectl delete pod <pod-name>
 ```

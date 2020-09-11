@@ -1,4 +1,4 @@
-# virtualenv Cheat Sheet
+# virtualenv Cheat Sheet (python)
 
 This cheat sheet is for those who like spam...er...a...comedy about spam (https://www.youtube.com/watch?v=zLih-WQwBSc).
 

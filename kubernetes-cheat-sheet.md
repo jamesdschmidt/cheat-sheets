@@ -48,6 +48,11 @@ List nodes
 
 ## Pods
 
+Create a pod
+```
+% kubectl apply -f pod.yaml
+```
+
 List pods
 ```
 % kubectl get pods

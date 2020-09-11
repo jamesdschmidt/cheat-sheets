@@ -12,6 +12,11 @@ List clusters
 kind get clusters
 ```
 
+Get cluster information
+```
+kubectl cluster-info
+```
+
 Delete a cluster (default kind cluster)
 ```
 kind delete cluster

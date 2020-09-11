@@ -3,7 +3,7 @@
 ## Connect
 In default installations DBUSER is postgres.
 ```
-$ psql "postgresql://DBUSER:@localhost:5432"
+psql "postgresql://DBUSER:@localhost:5432"
 ```
 
 Command | Description

@@ -58,6 +58,11 @@ List pods
 % kubectl get pods
 ```
 
+Get details of pod
+```
+% kubectl describe pod <pod-name>
+```
+
 Delete a pod
 ```
 % kubectl delete pod <pod-name>

@@ -86,6 +86,11 @@ Stop all containers
 % docker stop $(docker ps -a -q)
 ```
 
+Display a live stream of container(s) resource usage statistics (https://docs.docker.com/engine/reference/commandline/stats/)
+```
+% docker stats
+```
+
 ## Compose
 
 Builds, (re)creates, starts, and attaches to containers for a service. (https://docs.docker.com/compose/reference/up/)

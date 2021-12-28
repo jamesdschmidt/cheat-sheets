@@ -78,6 +78,23 @@ Delete the specified branch.
 git branch -D [branch-name]
 ```
 
+## Changes
+
+Add a file to the snapshot.
+```
+git add [filename]
+```
+
+Add all changes to the snapshot.
+```
+git add .
+```
+
+Commit the snapshot to version history.
+```
+git commit -m "[descriptive message]"
+```
+
 ## History
 
 Show the working tree status. (https://git-scm.com/docs/git-status)

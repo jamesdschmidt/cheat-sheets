@@ -16,3 +16,4 @@ SELECT VERSION(); | show postgres version
 \dt | list tables
 \d+ name | describe table
 DROP DATABASE name; | remove a database
+CREATE DATABASE name; | create a database
